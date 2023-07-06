@@ -8,7 +8,7 @@ body {
     background-color: aquamarine;
     height: max-content;
 }
-#cabecera{
+.cabecera{
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -19,8 +19,7 @@ body {
     padding: 3%;
 }
 header > .marcadores {
-    display: flex;
-    
+    display: flex;    
     justify-content: space-around;
     align-items: stretch;
     width: 80%;
@@ -49,8 +48,7 @@ main > *  {
     display:inline-flex;
     flex-direction: row;
     justify-content:space-evenly;
-    /* justify-self: auto; */
-    /* margin: 0 ; */
+
 }
 main > contenedor-img > *{
     display: flex;
@@ -109,7 +107,7 @@ footer {
 }
 
 .imgn {
-    /* display:block; */
+ 
     padding: 1%;
     background-color: burlywood;
     width: 80%;
@@ -118,30 +116,25 @@ footer {
 }
 
 
-.combos{
-    margin: 20px 0;
+.combos > .img-tabla-combos{
+
     display:flex;
     width: 300px;
-    height: auto;
+    height:300px;
     padding: 1%;
-    background-color: rgb(112, 112, 35);
-    justify-content: space-evenly;    
+    /* background-color: rgb(112, 112, 35); */
+    justify-content: center;  
+    align-items: center;  
 }
 .combos-gan, .combos-prem {
 
-    background-color: rgb(166, 241, 216);
-    /* opacity: 75%; */
+    background-color: rgb(166, 241, 216);   
     height: auto;
     width: 100%;
     margin: 1%;
     text-align: center;
 }
-/* .combos-prem{
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
 
-} */
 
  .comb-figuras> img{
     width: 200px;
@@ -178,16 +171,11 @@ height: 40px;
     display:flex;
     flex-direction: column;
 }
-/* .cajas{
-    width: 50px;
-    height: 50px;
-    padding: 3px;
-    background-color: hsla(60, 72%, 83%, 0.51);
-} */
+
 
 label{
     
-    background-color:rgb(200, 172, 172) ;
+    background-color:rgb(201, 164, 164) ;
     margin-right: 2%;
     margin-left: 2%;
     margin-bottom: 2%;
@@ -204,6 +192,7 @@ input{
     margin: 10px;
     color:aliceblue
 }
+/* configuracion de las partes que son responsive y adaptables  */
 @media (width<  720px) {
     header {
         display:flex;
@@ -216,7 +205,6 @@ input{
     flex-direction:column;
     justify-content:center;
     align-items: center;
-
 }
 }
  
@@ -239,7 +227,7 @@ input{
     opacity: 1;
     pointer-events: unset;
     transition: opacity .6s;
-    /* --transform: translateY(0); */
+   
 }
 .modal__container{
     width: 90%;
@@ -253,8 +241,7 @@ input{
     gap:1em;
     place-items: center;
     grid-auto-columns: 100%; 
-    /* transform: var(--transform);
-    transition: var(--transsition); */
+
 }
 .modal__title{
     font-size:2.5rem ;
@@ -294,7 +281,44 @@ input{
     gap: 20px;
     justify-content: space-evenly;
     align-items: center;
+    width:100%;
 }
+
+.img-individuales{
+    width:66%;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap:10px;
+}
+
+label > img{
+    width: 25%;
+    height: 25%;
+}
+.img-individuales > label{
+    text-align: center;
+}
+.img-individuales> .img-filas > label{
+    width: fit-content;
+    height: fit-content;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.combos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100px;
+    height: 200px;
+}
+.img-tabla-combos{
+   display: flex;
+}
+
 
 
 
