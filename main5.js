@@ -380,8 +380,7 @@ function reseteo (){
             {
               if ((ObjFiguras[j].ruta == ObjTablero[i].ruta) && (contador == 19))
               {
-                ObjTablero[i].valor = ObjFiguras[j].valor
-            
+                ObjTablero[i].valor = ObjFiguras[j].valor            
               }
             }       
         }
